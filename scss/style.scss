@@ -1,18 +1,17 @@
 @import 'mixin';
 @import 'reset';
 
-$bg-color: #101010;
-$color: #f0f0f0;
-/* other most used colors by direct name */
+/* DEFAULTS */
 
 body{
-	font-family: optional;
+	font-family: "Space Grotesk", Arial, sans-serif;
 	font-weight: optional;
 	background-color: $bg-color;
 	color: $color;
+	font-size: 18px;
 }
 
-.wrapper {
+.wrapper{
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -27,4 +26,38 @@ body{
 
 .main{
 	flex: 1 1 auto;
+}
+
+/* HEADER */
+
+.header {
+	margin-top: 60px;
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+	&__menu {
+		ul{
+			display: flex;
+			gap: 40px;	
+			li::first-letter{
+				text-transform: capitalize;
+			}
+		}
+	}
+	&__button {
+		background-color: $bg-color;
+		border: 1px solid $dark;
+		&::first-letter{
+			text-transform: capitalize;
+		}
+	}
 }
