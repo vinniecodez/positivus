@@ -1,6 +1,38 @@
 @import 'mixin';
 @import 'reset';
 
+/* RECURRING ELEMENTS */
+
+$bg-color: #fff;
+$color: #000;
+$dark: #191A23;
+$green: #B9FF66;
+$gray: #F3F3F3;
+
+.section-title{
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.block-title{
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.button{
+	font-size: 20px;
+	line-height: 1.4;
+	padding: 20px 35px;
+	border-radius: 14px;
+	text-align: center;
+	background-color: $dark;
+	color: $bg-color;
+}
+
+.flc::first-letter{
+	text-transform: capitalize;
+}
+
 /* DEFAULTS */
 
 body{
@@ -48,16 +80,56 @@ body{
 		ul{
 			display: flex;
 			gap: 40px;	
-			li::first-letter{
-				text-transform: capitalize;
-			}
 		}
 	}
 	&__button {
 		background-color: $bg-color;
+		color: $dark;
 		border: 1px solid $dark;
-		&::first-letter{
-			text-transform: capitalize;
+	}
+}
+
+/* MAIN */
+
+.main {
+	margin-top: 60px;
+	&__container {
+	}
+	&__about {
+	}
+}
+
+/* ABOUT */
+
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 100px;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+		flex: 0 0 40%;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 60px;
+	}
+	&__info {
+		font-size: 20px;
+		line-height: 1.4;
+		max-width: 498px;
+	}
+	&__button {
+		align-self: flex-start;
+	}
+	&__image {
+		flex: 0 0 40%;
+		img{
+			min-width: 100%;
+			min-height: 100%;
 		}
 	}
 }
+
