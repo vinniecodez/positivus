@@ -1,0 +1,32 @@
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 100px;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+		flex: 0 0 40%;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 60px;
+	}
+	&__info {
+		font-size: 20px;
+		line-height: 1.4;
+		max-width: 498px;
+	}
+	&__button {
+		align-self: flex-start;
+	}
+	&__image {
+		flex: 0 0 40%;
+		img{
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+}
+

@@ -1,0 +1,24 @@
+body{
+	font-family: "Space Grotesk", Arial, sans-serif;
+	font-weight: optional;
+	background-color: $bg-color;
+	color: $color;
+	font-size: 18px;
+}
+
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+}
+
+[class*="__container"]{
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.main{
+	flex: 1 1 auto;
+}
